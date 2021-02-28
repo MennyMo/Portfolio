@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar .logo a span{
+    color: plum;    
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: plum;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    background: url('images/background3.jpg') no-repeat center ;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .first-text{
+    font-size: 27px;
+}
+.home .home-content .second-text{
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .third-text{
+    font-size: 27px;
+    margin: 5px 0;
+}
+.home .home-content .third-text span{
+    color: plum;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: plum;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin: 20px;
+    border-radius: 6px;
+    border: 2px solid plum;  
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+.home .home-content a{
+    font-size: 23px;
+    padding: 10px 30px;
+}    
+.section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+.about .title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: 'who am I?';
+    position: absolute;
+    bottom: -7px;
+    padding: 5px;
+    background: #fff;
+    left: 50%;
+    bottom: -12px;
+    font-size: 20px;
+    color: plum;
+
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width:  45%;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
